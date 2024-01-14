@@ -6,6 +6,7 @@ FROM alpine:latest AS base
 ENV HOST=localhost
 ENV CONFIG=/config/config.json
 ENV FLASK_ENV="docker"
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
 
 # Install required system packages
 RUN apk add \
