@@ -11,7 +11,7 @@ RUN apk add \
 RUN pip3 install \
 	flask \
 	requests \
-	waitress
+	waitress --break-system-packages
 
 # Copy files
 COPY /app.py /app/app.py
